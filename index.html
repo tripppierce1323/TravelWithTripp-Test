@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TravelWithTripp</title>
+
+  <!-- Favicon / Mobile Icon -->
+ <link
+  rel="icon"
+  type="image/png"
+  href="assets/logos/travelwithtripp-icon-transparent.png"
+/>
+
+<link
+  rel="apple-touch-icon"
+  href="assets/logos/travelwithtripp-icon-transparent.png"
+/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="main-header">
+
+    <div class="brand">
+
+      <img
+        src="assets/logos/travelwithtripp-icon-transparent.png"
+        alt="TravelWithTripp Logo"
+        class="brand-logo"
+      />
+
+      <div>
+        <div class="brand-name">
+          TravelWith<span>Tripp</span>
+        </div>
+
+        <div class="brand-subtitle">
+          LUXURY REWARDS & TRAVEL
+        </div>
+      </div>
+
+    </div>
+
+    <button
+      class="hamburger"
+      onclick="toggleMenu()"
+      aria-label="Open navigation menu"
+    >
+      ☰
+    </button>
+
+  </header>
+
+  <!-- SLIDE MENU -->
+  <nav id="menu" class="menu">
+
+    <a onclick="loadPage('home.html')">Home</a>
+    <a onclick="loadPage('wallet.html')">My Wallet</a>
+    <a onclick="loadPage('bonuses.html')">Welcome Offers</a>
+    <a onclick="loadPage('calculator.html')">Card Finder</a>
+    <a onclick="loadPage('tracker.html')">Credit Tracker</a>
+    <a onclick="loadPage('trips.html')">Trip Itineraries</a>
+    <a onclick="loadPage('about.html')">About</a>
+
+  </nav>
+
+  <!-- PAGE CONTENT -->
+  <main id="content"></main>
+
+  <!-- DATA FILES -->
+  <script src="data/welcome-bonus.js"></script>
+<script src="data/cards.js"></script>
+<script src="data/businesscards.js"></script>
+
+  <!-- MAIN SCRIPT -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
