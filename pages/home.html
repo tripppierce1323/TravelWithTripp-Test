@@ -1,0 +1,504 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===================================================== */
+/* BODY */
+/* ===================================================== */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(184,131,36,0.08),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      180deg,
+      #010912 0%,
+      #011224 24%,
+      #02152d 52%,
+      #011224 78%,
+      #010912 100%
+    );
+
+  color: #ffffff;
+}
+
+
+/* ===================================================== */
+/* HERO */
+/* ===================================================== */
+
+.hero {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  height: 92vh;
+  min-height: 760px;
+  overflow: hidden;
+  border-radius: 0 0 34px 34px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* DARK OVERLAY */
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(1,11,22,0.35),
+      rgba(1,11,22,0.62)
+    );
+
+  z-index: 1;
+}
+
+/* HERO TEXT */
+
+.hero-overlay {
+  position: absolute;
+  top: 11%;
+  left: 7%;
+  width: 82%;
+  z-index: 2;
+}
+
+/* TOP LABEL */
+
+.hero-kicker {
+  font-family: "Poppins", sans-serif;
+  color: #b88324;
+
+  font-size: 3.3vw;
+  font-weight: 700;
+
+  letter-spacing: 5px;
+
+  margin-bottom: 18px;
+}
+
+/* MAIN TITLE */
+
+.hero h1 {
+  font-family: "Cormorant Garamond", serif;
+  color: #b88324;
+  font-size: 16vw;
+  font-weight: 600;
+  line-height: 0.88;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.45);
+  filter: drop-shadow(0 4px 18px rgba(0,0,0,0.28));
+}
+
+/* GOLD */
+
+.hero h1 span {
+  color: #b88324;
+}
+
+.hero-description {
+  font-family: "Poppins", sans-serif;
+  color: rgba(248,243,234,0.88);
+  font-size: 4.2vw;
+  line-height: 1.35;
+  max-width: 78%;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.42);
+}
+
+
+/* ===================================================== */
+/* SECTION TITLE */
+/* ===================================================== */
+
+.section-title {
+  text-align: center;
+  margin: 70px 0 40px;
+}
+
+.section-title small {
+  font-family: "Poppins", sans-serif;
+  color: #b88324;
+  letter-spacing: 6px;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+.section-title h2 {
+  margin-top: 18px;
+
+  font-family: "Poppins", sans-serif;
+  color: #b88324;
+
+  font-size: 12vw;
+  font-weight: 800;
+
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+
+/* ===================================================== */
+/* DASHBOARD */
+/* ===================================================== */
+
+.home-dashboard {
+  margin-top: 30px;
+}
+
+.dashboard-image-wrap {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+.dashboard-image {
+  width: 100%;
+  display: block;
+}
+
+
+/* LABELS */
+
+.dashboard-label {
+  position: absolute;
+  width: 42%;
+  text-align: center;
+  z-index: 5;
+}
+
+/* TITLE */
+
+.dashboard-label h3 {
+  font-family: "Poppins", sans-serif;
+  color: #b88324;
+  font-size: 4vw;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 3px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.35);
+}
+
+/* DESCRIPTION */
+
+.dashboard-label p {
+  font-family: "Poppins", sans-serif;
+  color: rgba(248,243,234,0.72);
+  font-size: 2.1vw;
+  line-height: 1.12;
+  margin-bottom: 4px;
+}
+
+/* BUTTON */
+
+.dashboard-label span {
+  font-family: "Poppins", sans-serif;
+  color: #b88324;
+  font-size: 2.8vw;
+  font-weight: 700;
+}
+
+/* ROW 1 */
+
+.label-1 {
+  top: 26.8%;
+  left: 4%;
+}
+
+.label-2 {
+  top: 26.8%;
+  right: 4%;
+}
+
+/* ROW 2 */
+
+.label-3 {
+  top: 58.8%;
+  left: 4%;
+}
+
+.label-4 {
+  top: 58.8%;
+  right: 4%;
+}
+
+/* ROW 3 */
+
+.label-5 {
+  top: 90.8%;
+  left: 4%;
+}
+
+.label-6 {
+  top: 90.8%;
+  right: 4%;
+}
+
+
+/* ===================================================== */
+/* FOLLOW */
+/* ===================================================== */
+
+.follow-section {
+  margin-top: 50px;
+  padding: 70px 24px;
+
+  text-align: center;
+}
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.03),
+    0 20px 60px rgba(0,0,0,0.35);
+}
+
+.follow-section h2 {
+  font-family: "Poppins", sans-serif;
+  color: #b88324;
+
+  font-size: 14vw;
+  font-weight: 800;
+
+  line-height: 0.95;
+  letter-spacing: -2px;
+
+  margin-bottom: 24px;
+}
+
+.follow-section p {
+  font-family: "Poppins", sans-serif;
+
+  color: rgba(255,255,255,0.74);
+
+  font-size: 5vw;
+  line-height: 1.5;
+
+  max-width: 700px;
+  margin: auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 38px;
+}
+
+.social-icons a {
+  width: 110px;
+  height: 110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.25s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+}
+
+.social-icons img {
+  width: 110px;
+  height: 110px;
+
+  object-fit: contain;
+  display: block;
+
+  filter:
+    drop-shadow(0 0 18px rgba(184,131,36,0.22));
+}
+
+
+/* ===================================================== */
+/* MOBILE */
+/* ===================================================== */
+
+@media (min-width: 768px) {
+
+  .hero {
+    height: 100vh;
+  }
+
+  .hero-overlay {
+    top: 13%;
+    left: 8%;
+    width: 45%;
+  }
+
+  .hero-kicker {
+    font-size: 15px;
+  }
+
+  .hero h1 {
+    font-size: 92px;
+  }
+
+  .hero-description {
+    font-size: 22px;
+    max-width: 620px;
+  }
+
+}
+
+</style>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <img
+    src="assets/images/hero-maldives.jpeg"
+    alt="Luxury tropical resort"
+  >
+
+  <div class="hero-overlay">
+
+    <p class="hero-kicker">
+      TRAVELWITHTRIPP
+    </p>
+
+    <h1>
+      Turn Points<br>
+      Into<br>
+      <span>Luxury Escapes</span>
+    </h1>
+
+    <p class="hero-description">
+      Smarter Points Strategies<br>
+      Better Redemptions<br>
+      Luxury Travel<br>
+      No Compromise
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- SECTION TITLE -->
+
+<div class="section-title">
+
+  <small>START EXPLORING</small>
+
+  <h2>
+    Build Your<br>
+    Rewards Strategy
+  </h2>
+
+</div>
+
+
+<!--
+<!-- DASHBOARD -->
+
+<section class="home-dashboard">
+
+  <div class="dashboard-image-wrap">
+
+    <img
+      class="dashboard-image"
+      src="assets/images/card-home-images.PNG"
+      alt="TravelWithTripp Dashboard"
+    >
+
+    <div class="dashboard-label label-1">
+      <h3>Card Finder</h3>
+      <p>Find your best rewards setup.</p>
+      <span>Find Cards →</span>
+    </div>
+
+    <div class="dashboard-label label-2">
+      <h3>My Wallet</h3>
+      <p>See the exact cards I use.</p>
+      <span>Explore →</span>
+    </div>
+
+    <div class="dashboard-label label-3">
+      <h3>Best Offers</h3>
+      <p>Track the strongest card offers.</p>
+      <span>View Offers →</span>
+    </div>
+
+    <div class="dashboard-label label-4">
+      <h3>Trip Guides</h3>
+      <p>Luxury trips booked with points.</p>
+      <span>See Trips →</span>
+    </div>
+
+    <div class="dashboard-label label-5">
+      <h3>Credit Tracker</h3>
+      <p>Track credits, perks, and fees.</p>
+      <span>Track Value →</span>
+    </div>
+
+    <div class="dashboard-label label-6">
+      <h3>About Tripp</h3>
+      <p>The story behind TravelWithTripp.</p>
+      <span>Read More →</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- FOLLOW -->
+
+<section class="follow-section">
+
+  <h2>Follow The Journey</h2>
+
+  <p>
+    Luxury travel, points strategies, and real redemptions.
+  </p>
+
+  <div class="social-icons">
+
+    <a
+      href="YOUR_YOUTUBE_LINK"
+      target="_blank"
+      aria-label="YouTube"
+    >
+      <img
+        src="assets/logos/travelwithtripp-youtube-icon-transparent.png"
+        alt="YouTube"
+      >
+    </a>
+
+    <a
+      href="YOUR_INSTAGRAM_LINK"
+      target="_blank"
+      aria-label="Instagram"
+    >
+      <img
+        src="assets/logos/travelwithtripp-instagram-icon-transparent.png"
+        alt="Instagram"
+      >
+    </a>
+
+  </div>
+
+</section>
